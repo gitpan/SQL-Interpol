@@ -29,4 +29,4 @@ resources:
   bugtracker: http://github.com/ap/SQL-Interpol/issues
   homepage: http://github.com/ap/SQL-Interpol
   repository: git://github.com/ap/SQL-Interpol
-version: 1.000
+version: 1.001
