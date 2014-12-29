@@ -2,7 +2,7 @@ use 5.012;
 use warnings;
 
 package SQL::Interpol;
-$SQL::Interpol::VERSION = '1.001';
+$SQL::Interpol::VERSION = '1.002';
 # ABSTRACT: interpolate Perl variables into SQL statements
 
 use Exporter::Tidy all => [ qw( sql_interp sql ) ];
@@ -18,7 +18,7 @@ sub sql_interp {
 
 
 package SQL::Interpol::Parser;
-$SQL::Interpol::Parser::VERSION = '1.001';
+$SQL::Interpol::Parser::VERSION = '1.002';
 use Object::Tiny::Lvalue qw( alias_id bind );
 
 use Carp ();
@@ -40,9 +40,8 @@ sub parse {
 
     my ( $item, $prev );
     my $error = sub {
-        my $msg = "Unrecognized element '$item'";
-        $msg .= " following '$prev'" if defined $prev;
-        _error $msg;
+        my $where = defined $prev ? " following '$prev'" : '';
+        _error "Unrecognized element '$item'$where";
     };
 
     while ( @_ ) {
@@ -173,7 +172,7 @@ SQL::Interpol - interpolate Perl variables into SQL statements
 
 =head1 VERSION
 
-version 1.001
+version 1.002
 
 =head1 SYNOPSIS
 

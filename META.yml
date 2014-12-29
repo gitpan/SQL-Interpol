@@ -3,6 +3,7 @@ abstract: 'interpolate Perl variables into SQL statements'
 author:
   - 'Aristotle Pagaltzis <pagaltzis@gmx.de>'
 build_requires:
+  Data::Dumper: 0
   File::Find: 0
   File::Temp: 0
   Test::Differences: 0
@@ -29,4 +30,4 @@ resources:
   bugtracker: http://github.com/ap/SQL-Interpol/issues
   homepage: http://github.com/ap/SQL-Interpol
   repository: git://github.com/ap/SQL-Interpol
-version: 1.001
+version: 1.002

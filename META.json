@@ -32,6 +32,7 @@
       },
       "test" : {
          "requires" : {
+            "Data::Dumper" : "0",
             "File::Find" : "0",
             "File::Temp" : "0",
             "Test::Differences" : "0",
@@ -51,6 +52,6 @@
          "url" : "git://github.com/ap/SQL-Interpol"
       }
    },
-   "version" : "1.001"
+   "version" : "1.002"
 }
 

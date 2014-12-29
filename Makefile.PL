@@ -29,13 +29,14 @@ my %WriteMakefileArgs = (
     "warnings" => 0
   },
   "TEST_REQUIRES" => {
+    "Data::Dumper" => 0,
     "File::Find" => 0,
     "File::Temp" => 0,
     "Test::Differences" => 0,
     "Test::More" => "0.88",
     "lib" => 0
   },
-  "VERSION" => "1.001",
+  "VERSION" => "1.002",
   "test" => {
     "TESTS" => "t/*.t"
   }
@@ -45,6 +46,7 @@ my %WriteMakefileArgs = (
 my %FallbackPrereqs = (
   "Carp" => 0,
   "DBIx::Simple" => 0,
+  "Data::Dumper" => 0,
   "Exporter::Tidy" => 0,
   "ExtUtils::MakeMaker" => 0,
   "File::Find" => 0,
