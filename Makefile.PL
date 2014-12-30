@@ -22,10 +22,8 @@ my %WriteMakefileArgs = (
   "NAME" => "SQL::Interpol",
   "PREREQ_PM" => {
     "Carp" => 0,
-    "DBIx::Simple" => 0,
     "Exporter::Tidy" => 0,
     "Object::Tiny::Lvalue" => 0,
-    "strict" => 0,
     "warnings" => 0
   },
   "TEST_REQUIRES" => {
@@ -34,9 +32,9 @@ my %WriteMakefileArgs = (
     "File::Temp" => 0,
     "Test::Differences" => 0,
     "Test::More" => "0.88",
-    "lib" => 0
+    "strict" => 0
   },
-  "VERSION" => "1.002",
+  "VERSION" => "1.003",
   "test" => {
     "TESTS" => "t/*.t"
   }
@@ -45,7 +43,6 @@ my %WriteMakefileArgs = (
 
 my %FallbackPrereqs = (
   "Carp" => 0,
-  "DBIx::Simple" => 0,
   "Data::Dumper" => 0,
   "Exporter::Tidy" => 0,
   "ExtUtils::MakeMaker" => 0,
@@ -54,7 +51,6 @@ my %FallbackPrereqs = (
   "Object::Tiny::Lvalue" => 0,
   "Test::Differences" => 0,
   "Test::More" => "0.88",
-  "lib" => 0,
   "strict" => 0,
   "warnings" => 0
 );

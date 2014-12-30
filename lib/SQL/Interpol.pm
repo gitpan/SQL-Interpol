@@ -2,7 +2,7 @@ use 5.012;
 use warnings;
 
 package SQL::Interpol;
-$SQL::Interpol::VERSION = '1.002';
+$SQL::Interpol::VERSION = '1.003';
 # ABSTRACT: interpolate Perl variables into SQL statements
 
 use Exporter::Tidy all => [ qw( sql_interp sql ) ];
@@ -18,7 +18,7 @@ sub sql_interp {
 
 
 package SQL::Interpol::Parser;
-$SQL::Interpol::Parser::VERSION = '1.002';
+$SQL::Interpol::Parser::VERSION = '1.003';
 use Object::Tiny::Lvalue qw( alias_id bind );
 
 use Carp ();
@@ -172,7 +172,7 @@ SQL::Interpol - interpolate Perl variables into SQL statements
 
 =head1 VERSION
 
-version 1.002
+version 1.003
 
 =head1 SYNOPSIS
 

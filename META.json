@@ -22,11 +22,9 @@
       "runtime" : {
          "requires" : {
             "Carp" : "0",
-            "DBIx::Simple" : "0",
             "Exporter::Tidy" : "0",
             "Object::Tiny::Lvalue" : "0",
             "perl" : "5.012",
-            "strict" : "0",
             "warnings" : "0"
          }
       },
@@ -37,7 +35,7 @@
             "File::Temp" : "0",
             "Test::Differences" : "0",
             "Test::More" : "0.88",
-            "lib" : "0"
+            "strict" : "0"
          }
       }
    },
@@ -52,6 +50,6 @@
          "url" : "git://github.com/ap/SQL-Interpol"
       }
    },
-   "version" : "1.002"
+   "version" : "1.003"
 }
 
